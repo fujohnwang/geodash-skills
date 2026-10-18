@@ -1,0 +1,4 @@
+interface:
+  display_name: "GeoDash 产品内容建设"
+  short_description: "规划、起草 Pillar 与支撑页，经 MCP 提交；依据已有问题和反馈完善内容"
+  default_prompt: "使用 $geo-content-creator 为指定产品完成 Pillar 与支撑页的基础规划、起草和 MCP 提交，不自动创建问题库，保留已有内容和关联。"

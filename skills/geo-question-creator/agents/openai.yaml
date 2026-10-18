@@ -1,0 +1,4 @@
+interface:
+  display_name: "GeoDash 问题库建设"
+  short_description: "基于产品与 Pillar 内容建立首批监测问题，按需扩展 variants 并保留关联"
+  default_prompt: "使用 $geo-question-creator 为指定产品基于已有 Pillar 内容建立首批主问题并关联已有内容，保留原有问题和关系，暂不生成 variants 或启动检测。"
