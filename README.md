@@ -11,20 +11,20 @@
 
 使用 [Skills CLI](https://github.com/vercel-labs/skills)。命令是 `npx skills add`；从 GitHub 读取 SKILL.md 及其支持文件，无需将本项目发布到 npm。
 
-本地项目尚未推送 GitHub。以下 `YOUR_GITHUB_OWNER/geodash-skills` 是仓库占位符，发布后替换为实际的 GitHub 用户/组织和仓库名。在准备使用 skill 的项目目录执行：
+本地项目尚未推送 GitHub。以下 `fujohnwang/geodash-skills` 是仓库占位符，发布后替换为实际的 GitHub 用户/组织和仓库名。在准备使用 skill 的项目目录执行：
 
 ```sh
 # 查看两个 skill，不安装
-npx skills add YOUR_GITHUB_OWNER/geodash-skills --list
+npx skills add fujohnwang/geodash-skills --list
 
 # 只安装内容 skill，同时供 Codex 和 Claude Code 使用
-npx skills add YOUR_GITHUB_OWNER/geodash-skills --skill geo-content-creator --agent codex claude-code
+npx skills add fujohnwang/geodash-skills --skill geo-content-creator --agent codex claude-code
 
 # 只安装问题 skill
-npx skills add YOUR_GITHUB_OWNER/geodash-skills --skill geo-question-creator --agent codex claude-code
+npx skills add fujohnwang/geodash-skills --skill geo-question-creator --agent codex claude-code
 
 # 同时安装两者
-npx skills add YOUR_GITHUB_OWNER/geodash-skills --skill geo-content-creator geo-question-creator --agent codex claude-code
+npx skills add fujohnwang/geodash-skills --skill geo-content-creator geo-question-creator --agent codex claude-code
 ```
 
 默认安装到当前项目；需要所有项目都能使用时加 `--global`。只用一个客户端时，`--agent` 后只保留 `codex` 或 `claude-code`。重新打开客户端会话以发现新 skill。安装 skill 不会自动配置 MCP、授权产品或写入业务数据。
